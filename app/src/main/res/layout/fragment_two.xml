@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="id.lazday.tablayout.fragment.FragmentTwo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        >
+
+        <RelativeLayout
+            android:id="@+id/firstContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image"
+
+                android:layout_width="126dp"
+                android:layout_height="123dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/gallery" />
+
+            <TextView
+                android:id="@+id/numpost"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/image"
+                android:fontFamily="sans-serif-condensed"
+                android:text="1234"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/Post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/numpost"
+                android:layout_toRightOf="@id/image"
+                android:layout_marginLeft="30dp"
+                android:text="Post"/>
+
+            <TextView
+                android:id="@+id/numfollowers"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_toRightOf="@id/image"
+                android:fontFamily="sans-serif-condensed"
+                android:text="6543"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/numfollowers"
+                android:layout_toRightOf="@id/image"
+                android:layout_marginLeft="84dp"
+                android:text="Followers"/>
+            <TextView
+                android:id="@+id/numfollowing"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:layout_toRightOf="@id/image"
+                android:fontFamily="sans-serif-condensed"
+                android:text="2234"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_below="@id/numfollowing"
+                android:layout_toRightOf="@id/image"
+                android:layout_marginLeft="177dp"
+                android:text="Following"/>
+
+            <Button
+                android:id="@+id/EditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@id/image"
+                android:text="Edit Profile"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/secndContainer"
+            android:layout_width="match_parent"
+            android:layout_below="@id/firstContainer"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="20sp"
+                android:text="Your Name"/>
+
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:textSize="13sp"
+                android:layout_marginLeft="20sp"
+                android:text="Your Bio goes here"/>
+
+            <TextView
+                android:id="@+id/biotoo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bio"
+                android:textSize="13sp"
+                android:layout_marginLeft="20dp"
+                android:text="and here too"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txtCredits"
+                android:autoLink="web"
+                android:id="@+id/infoTxtCredits"
+                android:layout_below="@id/biotoo"
+                android:layout_marginLeft="20dp"
+                android:linksClickable="true"/>
+
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation"
+        android:background="?android:attr/windowBackground"/>
+
+</RelativeLayout>

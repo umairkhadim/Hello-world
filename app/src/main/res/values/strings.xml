@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TabLayout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_one">Satu</string>
+    <string name="tab_two">Dua</string>
+    <string name="tab_three">Tiga</string>
+    <string name="tab_Four">four</string>
+    <string name="txtCredits"><a href="http://www.youtube.com">youtube</a></string>
+</resources>
