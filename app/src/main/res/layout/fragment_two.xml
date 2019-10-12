@@ -142,6 +142,7 @@
 
         </RelativeLayout>
 
+...............................................dgdgdgdfgdfgdfgdg
 
 
     </RelativeLayout>
@@ -157,5 +158,8 @@
         android:layout_alignParentBottom="true"
         app:menu="@menu/bottom_navigation"
         android:background="?android:attr/windowBackground"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
 
 </RelativeLayout>
